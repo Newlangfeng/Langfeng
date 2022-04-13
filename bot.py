@@ -174,23 +174,5 @@ async def ban(ctx, 成員: discord.Member, *, 處分原因=None):
     embed.set_footer(text=f"由{user}處分")
     await ctx.send(embed=embed)
 
-@slash.slash(description="禁言成員")
-@commands.has_permissions(kick_members=True)
-async def timeout(ctx, user: discord.Member=None, time=None, *,reason=None):
-    if reason==None:
-      reason=" 沒有原因"
-    time = humanfriendly.parse_timespan(time)
-    await user.timeout(until = discord.utils.utcnow() + datetime.timedelta(seconds=time), reason=reason)
-    await ctx.send(f"{user}aaaaa{time}處分原因={reason}")
-
-@slash.slash(description="解除禁言成員")
-@commands.has_permissions(kick_members=True)
-async def remove_timeout(ctx, 成員: discord.Member=None, *,處分原因=None):
-    await 成員.timeout(until=None, reason=處分原因)
-    await ctx.send(f"{成員}aaaaa")
-
-
-
-
 
 client.run("Nzg3NTg3NTMzNjM4ODYwODIw.X9XIDA.p75VUPhMgLnkUgAOLNBC4qA3CnY")
