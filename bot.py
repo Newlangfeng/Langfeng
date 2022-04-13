@@ -13,7 +13,6 @@ from discord_slash import SlashCommand, SlashContext
 client = discord.Client(intents=discord.Intents.all())
 slash = SlashCommand(client, sync_commands=True) # Declares slash commands through the client.
 
-token =("Nzg3NTg3NTMzNjM4ODYwODIw.X9XIDA.p75VUPhMgLnkUgAOLNBC4qA3CnY")
 
 @client.event
 async def on_ready():
@@ -175,4 +174,4 @@ async def ban(ctx, 成員: discord.Member, *, 處分原因=None):
     await ctx.send(embed=embed)
 
 
-client.run("Nzg3NTg3NTMzNjM4ODYwODIw.X9XIDA.p75VUPhMgLnkUgAOLNBC4qA3CnY")
+client.run("Nzg3NTg3NTMzNjM4ODYwODIw.X9XIDA.Lh4FomBzpm8TteY-ag7R-OKOA7g")
