@@ -174,4 +174,4 @@ async def ban(ctx, 成員: discord.Member, *, 處分原因=None):
     await ctx.send(embed=embed)
 
 
-client.run("Nzg3NTg3NTMzNjM4ODYwODIw.X9XIDA.Lh4FomBzpm8TteY-ag7R-OKOA7g")
+client.run("Nzg3NTg3NTMzNjM4ODYwODIw.X9XIDA.N5MTwcyc6BUD0MS-VUZg6-WjvDA")
